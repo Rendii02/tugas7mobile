@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tugas7/card_model.dart';
+import 'package:tugas7/cart_model.dart';
 import 'package:provider/provider.dart';
 
 class CartPage extends StatelessWidget {
@@ -14,7 +14,7 @@ class CartPage extends StatelessWidget {
           'Keranjang Anda',
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
-        backgroundColor: const Color(0xFF1B5E20),
+        backgroundColor: Colors.cyan,
         foregroundColor: Colors.white,
         elevation: 0,
       ),
@@ -36,7 +36,7 @@ class CartPage extends StatelessWidget {
                       child: const Icon(
                         Icons.shopping_bag_outlined,
                         size: 52,
-                        color: Color(0xFF388E3C),
+                        color: Colors.cyan,
                       ),
                     ),
                     const SizedBox(height: 20),

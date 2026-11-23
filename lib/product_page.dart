@@ -1,7 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tugas7/card_model.dart';
-import 'package:tugas7/card_page.dart';
+import 'package:tugas7/cart_model.dart';
+import 'package:tugas7/cart_page.dart';
 
 class ProductPage extends StatelessWidget {
   ProductPage({super.key});
@@ -30,7 +31,7 @@ class ProductPage extends StatelessWidget {
           'Daftar Produk',
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
-        backgroundColor: const Color(0xFF2E7D42),
+        backgroundColor: Colors.cyan,
         foregroundColor: Colors.white,
         elevation: 0,
         actions: [
@@ -41,7 +42,7 @@ class ProductPage extends StatelessWidget {
                 child: Badge(
                   label: Text('${cart.totalItems}'),
                   isLabelVisible: cart.totalItems > 0,
-                  backgroundColor: const Color(0xFFFFB74D),
+                  backgroundColor: CupertinoColors.destructiveRed ,
                   textColor: const Color(0xFF263328),
                   child: IconButton(
                     tooltip: 'Buka keranjang',
@@ -153,7 +154,7 @@ class ProductPage extends StatelessWidget {
                           },
                           style: IconButton.styleFrom(
                             backgroundColor: const Color(0xFFE5F1E3),
-                            foregroundColor: const Color(0xFF2E7D42),
+                            foregroundColor: Colors.black,
                           ),
                           icon: const Icon(Icons.add_shopping_cart),
                         ),
